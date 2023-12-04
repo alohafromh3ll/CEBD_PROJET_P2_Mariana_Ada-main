@@ -87,18 +87,18 @@ def insertDB():
         #print("Insertion de mesures en cours...cela peut prendre un peu de temps")
         # On ajoute les mesures
 
-        # read_csv_file(
-        #      "data/csv/Mesures.csv", ';',
-        #      "insert into Mesures values ('{}','{}', {}, {}, {})",
-        #      ['code_insee_departement', 'date_obs', 'tmin', 'tmax', 'tmoy']
-        # )
-
         read_csv_file(
-            "data/csv/MesuresSmall.csv", ';',
-            "insert into Mesures values ('{}','{}', {}, {}, {})",
-            ['code_insee_departement','date_obs','tmin','tmax','tmoy']
+              "data/csv/Mesures.csv", ';',
+              "insert into Mesures values ('{}','{}', {}, {}, {})",
+              ['code_insee_departement', 'date_obs', 'tmin', 'tmax', 'tmoy']
+         )
 
-        )
+        # read_csv_file(
+        #     "data/csv/MesuresSmall.csv", ';',
+        #     "insert into Mesures values ('{}','{}', {}, {}, {})",
+        #     ['code_insee_departement','date_obs','tmin','tmax','tmoy']
+        #
+        # )
 
         #On ajoute Communes
         read_csv_file(
