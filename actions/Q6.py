@@ -11,7 +11,7 @@ class Window(tk.Toplevel):
 
         # Définition de la taille de la fenêtre, du titre et des lignes/colonnes de l'affichage grid
         display.centerWindow(1000, 600, self)
-        self.title('F4 : températures en isère en 2022')
+        self.title('Q6 : températures en isère en 2022')
         display.defineGridDisplay(self, 1, 1)
 
         query = """
